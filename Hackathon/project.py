@@ -2,8 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Reading the file
-file_path = "Engineering_Branch_Analytics.csv"
-df = pd.read_csv('C:\Files\EngineeringData.csv')
+file_path = 'C:\learning\myfolder\RNSIT-SIC-CP\Hackathon\engineeringdata.csv'
+df = pd.read_csv(file_path)
 
 # Analyzing the best branch for entrepreneurship
 # Considering factors like startups, emerging technologies, and industry collaboration
