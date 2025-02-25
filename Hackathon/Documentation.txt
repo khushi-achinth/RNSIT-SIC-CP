@@ -1,0 +1,70 @@
+Engineering Branch Analytics - Documentation
+
+Overview
+    This program analyzes various engineering branches based on different factors such as entrepreneurship potential, practical exposure, job demand, salary, and dropout rates. 
+    It processes a dataset of engineering branches to extract insights that help in decision-making.
+
+Dataset
+    Branch Name: Name of the engineering branch.
+    Startups in the Field: Indicates the number of startups in that field (e.g., "Many", "Few").
+    Emerging Technologies: Lists the technologies associated with the branch.
+    Industry Collaboration: Describes industry collaboration as "Strong" or "Weak".
+    Current Demand: Job demand categorized as "Very High", "High", "Moderate", etc.
+    Practical Exposure: Level of practical exposure in the branch (e.g., "High", "Medium", "Low").
+    Internships (%): Percentage of students getting internships.
+    Average Salary (INR): Average salary offered to graduates of the branch.
+    Dropout Rates (%): Percentage of students who drop out from the branch.
+
+Analysis Performed
+    1. Finding the Best Branch for Entrepreneurship
+        Factors Considered:
+            Number of startups in the field
+            Emerging technologies
+            Industry collaboration
+
+        How It Works:
+            A score is assigned based on the number of startups in a field, with a higher score for more startups.
+            The number of emerging technologies associated with each branch is counted.
+            A score is assigned based on industry collaboration, with strong collaboration receiving a higher score.
+            The total entrepreneurship score is calculated by summing up these three factors.
+            The branch with the highest entrepreneurship score is selected.
+
+    2. Identifying the Branch with High Job Demand but Low Practical Exposure
+        Factors Considered:
+            Job demand
+            Practical exposure level
+            Internship opportunities
+
+        How It Works:
+            Job demand levels are mapped to numerical values, with higher demand getting a higher score.
+            Practical exposure is also scored based on its level (high, medium, or low).
+            The percentage of students obtaining internships is included as an additional factor.
+            A total practical exposure score is computed by summing these factors.
+            The branch with the lowest practical exposure score despite high demand is selected.
+
+    3. Finding the Branch with High Salaries but High Dropout Rates
+        Factors Considered:
+            Average salary
+            Dropout rate
+        
+        How It Works:
+            A score is calculated by subtracting the dropout rate from the average salary.
+            The branches are ranked based on this score.
+            The branch with the highest score (indicating high salary but high dropout rate) is selected.
+
+Visualizations
+    The program generates visual charts to represent:
+        Entrepreneurship Potential Across Branches
+        Practical Exposure vs. Job Demand
+        Salary vs. Dropout Rate Comparison
+    Example Chart for Entrepreneurship Scores:
+        A bar chart is created to represent the entrepreneurship scores of different branches.
+        The x-axis represents the branch names, while the y-axis represents the entrepreneurship scores.
+        The chart is customized for readability, including labels, titles, and rotated axis text.
+
+Inference
+    This program provides insights into:
+        The best branch for entrepreneurship.
+        Branches with high job demand but low practical exposure.
+        Branches with high salaries but high dropout rates.
+        These insights help students and educators in making informed decisions about career paths in engineering.
